@@ -1318,3 +1318,185 @@ flex: 1 }
 /*EVENTPAGE PAGE not chnaged for phone size (no need)*/
 
 }
+
+
+
+@media (max-width: 425px) {
+
+    .navbar {
+    padding: var(--xsmall-padding) var(--small-padding);
+}
+
+
+
+
+
+
+    .herosection { 
+         padding: var(--large-padding) var(--medium-padding) 
+    }
+
+    .trofeo {
+        padding: var(--medium-padding) var(--medium-padding) 0 var(--medium-padding);
+        gap: var(--small-spacing);
+    }
+
+    .maindetails {
+        gap: var(--small-spacing);
+    }
+
+    .viewmore {
+        margin-left: calc(var(--large-padding) * -1);
+        margin-right: calc(var(--large-padding) * -1);
+    }
+
+    .content1 {
+        max-height: 400px;
+    }
+
+
+    .sailinginmallorca {
+        padding: var(--small-padding) var(--small-padding);
+    }
+
+    .footercontent {
+        padding: var(--small-padding) var(--small-padding);
+    }
+
+
+/*EVENTS PAGE*/
+
+    .herosection2 {
+        padding: var(--small-padding) var(--small-padding);
+    }
+
+    .secondarynav {
+        padding: var(--small-padding) var(--small-padding);
+    }
+
+    .secondarynavcontent {
+        width: auto;
+    }
+    .secondarynavcontent ul{
+        gap: auto;
+    }
+
+    .secondarynavcontent a{
+        text-align: center;
+    }
+
+    .secondarynavcontent a.selected, a {
+    text-underline-offset: 2px;
+    
+    }
+
+    .searchbar input {
+        width: auto;
+    }
+    .events {
+        padding: var(--small-padding) var(--small-padding);
+    }
+
+    .eventcardlayout {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+/*LEARN PAGE*/
+
+       .learncontent {
+        padding: var(--small-padding) var(--medium-padding);
+    }
+
+    .learnimagesandquote {
+        gap: var(--medium-spacing);
+    }
+    .headingandfilter {
+        padding: var(--small-padding) var(--small-padding);
+        gap: var(--medium-spacing);
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .clubs {
+        padding: var(--small-padding) var(--small-padding);
+        
+    }
+
+     .clubsection {
+        gap: var(--medium-spacing);
+        
+    }
+
+    .clubsection img {
+        width: 100%;
+        height: auto;
+    }
+
+
+        /*FORUM PAGE*/
+
+    .createpost {
+        padding: var(--small-padding) var(--medium-padding);
+    }
+
+    .forumcontent {
+        padding: var(--small-padding) var(--medium-padding);
+    }
+
+     .forumpostcard {
+        padding: var(--small-padding) var(--small-padding);
+        min-width: 300px;
+    }
+
+
+  /*EVENTPAGE PAGE*/
+
+    .backbuttonarea {
+        padding: var(--small-padding) var(--small-padding);
+    }
+    .eventherosection {
+    padding: var(--small-padding) var(--small-padding) ;
+    }
+    .eventcontent {
+        padding: var(--small-padding) var(--small-padding);
+    }
+
+    .eventcontentflex1 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-spacing);
+    }
+
+    .eventcontentflex2 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-spacing);
+    }
+    
+    .otherupcomingevents {
+        padding: var(--small-padding) var(--small-padding);
+    }
+
+    .logo {
+    
+    font-size: var(--tertiary-font-size);
+    }
+
+    .mallorca {
+
+    font-size: var(--secondary-font-size);
+}
+
+.sailing {
+    font-size: var(--primary-font-size);
+}
+
+.experience {
+
+    font-size: var(--secondary-font-size);
+
+}
+
+}
