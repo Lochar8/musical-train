@@ -1333,11 +1333,12 @@ flex: 1 }
 
 
     .herosection { 
-         padding: var(--large-padding) var(--medium-padding) 
+         padding: var(--medium-padding) var(--small-padding);
+         min-height: 30vh;
     }
 
     .trofeo {
-        padding: var(--medium-padding) var(--medium-padding) 0 var(--medium-padding);
+        padding: var(--small-padding) var(--small-padding) 0 var(--small-padding);
         gap: var(--small-spacing);
     }
 
@@ -1346,21 +1347,24 @@ flex: 1 }
     }
 
     .viewmore {
-        margin-left: calc(var(--large-padding) * -1);
-        margin-right: calc(var(--large-padding) * -1);
+        margin-left: calc(var(--small-padding) * -1);
+        margin-right: calc(var(--small-padding) * -1);
     }
 
     .content1 {
-        max-height: 400px;
+        max-height: 350px;
+        flex-direction: column;
     }
 
 
     .sailinginmallorca {
         padding: var(--small-padding) var(--small-padding);
+        gap: var(--large-spacing);
     }
 
     .footercontent {
         padding: var(--small-padding) var(--small-padding);
+        gap: var(--small-spacing);
     }
 
 
@@ -1368,6 +1372,7 @@ flex: 1 }
 
     .herosection2 {
         padding: var(--small-padding) var(--small-padding);
+        height: 250px;
     }
 
     .secondarynav {
@@ -1376,78 +1381,103 @@ flex: 1 }
 
     .secondarynavcontent {
         width: auto;
+        gap: var(--small-spacing);
     }
     .secondarynavcontent ul{
-        gap: auto;
+        gap: var(--small-spacing);
     }
 
     .secondarynavcontent a{
         text-align: center;
+        text-underline-offset: 2px;
     }
 
-    .secondarynavcontent a.selected, a {
-    text-underline-offset: 2px;
-    
+    .searchbar {
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .searchbar input {
-        width: auto;
+        width: 100%;
+        max-width: 100%;
     }
     .events {
         padding: var(--small-padding) var(--small-padding);
+        gap: var(--small-spacing);
     }
 
     .eventcardlayout {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: 1fr; 
+        gap: var(--small-spacing);
+    }
+
+    .eventcard {
+        min-height: 450px;
+        min-width: unset;
+    }
+
+    .loadmorecard {
+        height: 450px;
     }
 
 /*LEARN PAGE*/
 
        .learncontent {
-        padding: var(--small-padding) var(--medium-padding);
+        padding: var(--small-padding) var(--small-padding);
+        gap: var(--small-spacing);
     }
 
     .learnimagesandquote {
-        gap: var(--medium-spacing);
+        gap: var(--small-spacing);
+        flex-direction: column;
     }
+
+    .learnimagesandquote img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
     .headingandfilter {
         padding: var(--small-padding) var(--small-padding);
-        gap: var(--medium-spacing);
+        gap: var(--small-spacing);
         display: flex;
+        flex-direction: column;
         justify-content: center;
-
-
     }
 
     .clubs {
         padding: var(--small-padding) var(--small-padding);
-        
+        gap: var(--small-spacing);
     }
 
      .clubsection {
-        gap: var(--medium-spacing);
-        
+        gap: var(--small-spacing);
+        flex-direction: column;
     }
 
     .clubsection img {
         width: 100%;
         height: auto;
+        max-width: 100%;
     }
 
 
         /*FORUM PAGE*/
 
     .createpost {
-        padding: var(--small-padding) var(--medium-padding);
+        padding: var(--small-padding) var(--small-padding);
     }
 
     .forumcontent {
-        padding: var(--small-padding) var(--medium-padding);
+        padding: var(--small-padding) var(--small-padding);
+        gap: var(--small-spacing);
     }
 
      .forumpostcard {
         padding: var(--small-padding) var(--small-padding);
-        min-width: 300px;
+        gap: var(--medium-spacing);
+        min-width: unset;
     }
 
 
@@ -1455,28 +1485,36 @@ flex: 1 }
 
     .backbuttonarea {
         padding: var(--small-padding) var(--small-padding);
+        margin-top: 70px;
     }
     .eventherosection {
     padding: var(--small-padding) var(--small-padding) ;
     }
     .eventcontent {
         padding: var(--small-padding) var(--small-padding);
+        gap: var(--small-spacing);
     }
 
     .eventcontentflex1 {
     display: flex;
     flex-direction: column;
-    gap: var(--medium-spacing);
+    gap: var(--small-spacing);
     }
 
     .eventcontentflex2 {
     display: flex;
     flex-direction: column;
-    gap: var(--medium-spacing);
+    gap: var(--small-spacing);
+    }
+
+    .eventcontentimage img {
+        max-width: 100%;
+        width: 100%;
     }
     
     .otherupcomingevents {
         padding: var(--small-padding) var(--small-padding);
+        gap: var(--small-spacing);
     }
 
     .logo {
@@ -1486,16 +1524,16 @@ flex: 1 }
 
     .mallorca {
 
-    font-size: var(--secondary-font-size);
+    font-size: var(--quaternary-font-size);
 }
 
 .sailing {
-    font-size: var(--primary-font-size);
+    font-size: var(--secondary-font-size);
 }
 
 .experience {
 
-    font-size: var(--secondary-font-size);
+    font-size: var(--quaternary-font-size);
 
 }
 
