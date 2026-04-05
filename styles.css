@@ -301,7 +301,7 @@ a:hover {
     flex-direction: column;
     gap: var(--xxlarge-spacing);
     flex: 1;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 .groupedtext {
@@ -366,13 +366,13 @@ a:hover {
     background-image: url('images/Screenshot_20260305_173916_Photo\ Editor\(1\).jpg');
     background-size: cover;
     background-position: center;
-    padding: var(--medium-padding) var(--xxlarge-padding);
+    color: var(--text-color);
+    padding: var(--medium-padding) var(--xlarge-padding) ;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
     gap: var(--xxlarge-spacing);
     flex-wrap: wrap;
+    
 }
 
 .textwithgreybackground {
@@ -385,15 +385,15 @@ a:hover {
     padding: var(--regular-padding);
     color: var(--text-color);
     gap: var(--medium-spacing);
-    min-width: 300px;
     flex: 1;
+    min-width: 200px;
 }
 
 .sailingimagesection {
     display: flex;
     flex-direction: column;
     flex:1;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 .sailingimage {
@@ -401,7 +401,8 @@ a:hover {
     border-style: solid;
     border-width: 8px;
     border-radius: var(--border-radius);
-    width: 100%;
+    max-width: 100%;
+    object-fit: scale-down;
 }
 
 .credit {
@@ -624,6 +625,7 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .details {
@@ -936,7 +938,7 @@ flex: 1 }
     margin-bottom: 0;
 }
 
-/*-----------------------------LIVE WEATHER STYLES-----------------------------*/
+
 
 
 
@@ -1025,7 +1027,7 @@ flex: 1 }
 .mobile-menu {
     display: none;
     position: absolute;
-    top: 77px;
+    top: 76px;
     left: 50%;    /* as I cannot have flex display and therefore use flex-end to position the menu, by using left and right margins and setting percentages I can, not only position the nav options, but i can determine the width too */
     right: 0;
     background-color: var(--footer-background-color);
@@ -1064,8 +1066,8 @@ flex: 1 }
     }
 
     .viewmore {
-        margin-left: calc(var(--large-padding) * -1);
-        margin-right: calc(var(--large-padding) * -1);
+        margin-left: calc(var(--medium-padding) * -1);
+        margin-right: calc(var(--medium-padding) * -1);
     }
 
     .content1 {
@@ -1320,7 +1322,6 @@ flex: 1 }
 }
 
 
-
 @media (max-width: 425px) {
 
     .navbar {
@@ -1346,24 +1347,54 @@ flex: 1 }
         gap: var(--small-spacing);
     }
 
+
     .viewmore {
         margin-left: calc(var(--small-padding) * -1);
         margin-right: calc(var(--small-padding) * -1);
     }
 
-    .content1 {
-        max-height: 350px;
-        flex-direction: column;
+    .sailinginmallorca {
+        padding: var(--small-padding);
+        gap: var(--small-spacing);
+    }
+
+    
+
+    .textwithgreybackground{
+        max-width: 100%;
+        min-width: 0;
+        padding: var(--small-padding);
+    }
+
+    .sailinginmallorca .textwithgreybackground h3 {
+        font-size: var(--tertiary-font-size);
     }
 
 
-    .sailinginmallorca {
-        padding: var(--small-padding) var(--small-padding);
-        gap: var(--large-spacing);
+    
+
+    
+
+
+
+    .content1 {
+        display: flex;
+        max-height: 600px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .textcontent {
+    gap: var(--small-spacing);
+    padding: var(--small-padding);
+}
+
+    .indeximagesection {
+        order: -1;
     }
 
     .footercontent {
-        padding: var(--small-padding) var(--small-padding);
+        padding: var(--medium-padding) var(--small-padding);
         gap: var(--small-spacing);
     }
 
@@ -1377,6 +1408,9 @@ flex: 1 }
 
     .secondarynav {
         padding: var(--small-padding) var(--small-padding);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .secondarynavcontent {
@@ -1390,6 +1424,19 @@ flex: 1 }
     .secondarynavcontent a{
         text-align: center;
         text-underline-offset: 2px;
+    }
+
+
+
+    .sncoptions ul{
+        display: flex;
+        flex-direction: column;
+        gap: var(--xsmall-spacing);
+    }
+
+    .sncoptions ul li{
+        display: flex;
+        justify-content: flex-start;
     }
 
     .searchbar {
@@ -1418,6 +1465,12 @@ flex: 1 }
 
     .loadmorecard {
         height: 450px;
+    }
+
+    .forumpostdetails {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--small-spacing);
     }
 
 /*LEARN PAGE*/
@@ -1500,6 +1553,44 @@ flex: 1 }
     flex-direction: column;
     gap: var(--small-spacing);
     }
+
+    .eventcontentflex2 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-spacing);
+    }
+
+    .eventcontentimage img {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .otherupcomingevents {
+        padding: var(--small-padding) var(--small-padding);
+        gap: var(--small-spacing);
+    }
+
+    .logo {
+    
+    font-size: var(--tertiary-font-size);
+    }
+
+    .mallorca {
+
+    font-size: var(--quaternary-font-size);
+}
+
+.sailing {
+    font-size: var(--secondary-font-size);
+}
+
+.experience {
+
+    font-size: var(--quaternary-font-size);
+
+}
+
+}
 
     .eventcontentflex2 {
     display: flex;
